@@ -1,0 +1,633 @@
+{
+	"info": {
+		"_postman_id": "acb9f0e3-5ce9-4aeb-b84b-18d9d4f82136",
+		"name": "ProductosUSB",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "6707906",
+		"_collection_link": "https://wwwredo.postman.co/workspace/wwwredo~7e216c33-7bf3-4674-b2a6-68110dd7a1a5/collection/6707906-acb9f0e3-5ce9-4aeb-b84b-18d9d4f82136?action=share&creator=6707906&source=collection_link"
+	},
+	"item": [
+		{
+			"name": "GetReferences",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOjEsImlhdCI6MTY3MjI1OTU4OCwiZXhwIjoxNjcyMjczOTg4fQ.J5VM8mYHK7LHxBJRb1Lmpx540U3JEV9wvhVL7UuGgCo",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://18.219.169.226:8000/productos/detProduct/724",
+					"protocol": "http",
+					"host": [
+						"18",
+						"219",
+						"169",
+						"226"
+					],
+					"port": "8000",
+					"path": [
+						"productos",
+						"detProduct",
+						"724"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UpdateReferencia",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "x-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOjEsImlhdCI6MTY3MTExNTI4NSwiZXhwIjoxNjcxMTI5Njg1fQ.WBlHgZm4HeXdMCFv_t--_Agm6F8BumgGE24L8c8mTxM",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "        {\r\n            \"qty\": 5\r\n        }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://18.219.169.226:8000/productos/detReference/update/2310",
+					"protocol": "http",
+					"host": [
+						"18",
+						"219",
+						"169",
+						"226"
+					],
+					"port": "8000",
+					"path": [
+						"productos",
+						"detReference",
+						"update",
+						"2310"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UpdateReferenciaInv",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "x-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOjEsImlhdCI6MTY3MTExNTI4NSwiZXhwIjoxNjcxMTI5Njg1fQ.WBlHgZm4HeXdMCFv_t--_Agm6F8BumgGE24L8c8mTxM",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "        {\r\n            \"qty\": 10\r\n        }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://18.219.169.226:8000/productos/detReference/update_inv/2310",
+					"protocol": "http",
+					"host": [
+						"18",
+						"219",
+						"169",
+						"226"
+					],
+					"port": "8000",
+					"path": [
+						"productos",
+						"detReference",
+						"update_inv",
+						"2310"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetProducts",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOjEsImlhdCI6MTY3MjI1OTU4OCwiZXhwIjoxNjcyMjczOTg4fQ.J5VM8mYHK7LHxBJRb1Lmpx540U3JEV9wvhVL7UuGgCo",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://18.219.169.226:8000/productos",
+					"protocol": "http",
+					"host": [
+						"18",
+						"219",
+						"169",
+						"226"
+					],
+					"port": "8000",
+					"path": [
+						"productos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetEncFactura",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOjEsImlhdCI6MTY3MjI1OTU4OCwiZXhwIjoxNjcyMjczOTg4fQ.J5VM8mYHK7LHxBJRb1Lmpx540U3JEV9wvhVL7UuGgCo",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://18.219.169.226:8000/productos/enc_factura/4",
+					"protocol": "http",
+					"host": [
+						"18",
+						"219",
+						"169",
+						"226"
+					],
+					"port": "8000",
+					"path": [
+						"productos",
+						"enc_factura",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetDetFactura",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOjEsImlhdCI6MTY3MjI1OTU4OCwiZXhwIjoxNjcyMjczOTg4fQ.J5VM8mYHK7LHxBJRb1Lmpx540U3JEV9wvhVL7UuGgCo",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://18.219.169.226:8000/productos/det_factura/4",
+					"protocol": "http",
+					"host": [
+						"18",
+						"219",
+						"169",
+						"226"
+					],
+					"port": "8000",
+					"path": [
+						"productos",
+						"det_factura",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetProductsComo",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOjEsImlhdCI6MTY3MjI1OTU4OCwiZXhwIjoxNjcyMjczOTg4fQ.J5VM8mYHK7LHxBJRb1Lmpx540U3JEV9wvhVL7UuGgCo",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://18.219.169.226:8000/productos/como/JEAN",
+					"protocol": "http",
+					"host": [
+						"18",
+						"219",
+						"169",
+						"226"
+					],
+					"port": "8000",
+					"path": [
+						"productos",
+						"como",
+						"JEAN"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetReferencesTalla",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOjEsImlhdCI6MTY3MjI1OTU4OCwiZXhwIjoxNjcyMjczOTg4fQ.J5VM8mYHK7LHxBJRb1Lmpx540U3JEV9wvhVL7UuGgCo",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://18.219.169.226:8000/productos/detReference/724/000000",
+					"protocol": "http",
+					"host": [
+						"18",
+						"219",
+						"169",
+						"226"
+					],
+					"port": "8000",
+					"path": [
+						"productos",
+						"detReference",
+						"724",
+						"000000"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"moviles_usb@hotmail.com\",\r\n    \"password\": \"Mateo20201$\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://18.219.169.226:8000/user/login",
+					"protocol": "http",
+					"host": [
+						"18",
+						"219",
+						"169",
+						"226"
+					],
+					"port": "8000",
+					"path": [
+						"user",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CreateFactura",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOjEsImlhdCI6MTY3MTExNTI4NSwiZXhwIjoxNjcxMTI5Njg1fQ.WBlHgZm4HeXdMCFv_t--_Agm6F8BumgGE24L8c8mTxM",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "        {\r\n             \"id_user\": 105\r\n        }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://18.219.169.226:8000/productos/enc_factura/create",
+					"protocol": "http",
+					"host": [
+						"18",
+						"219",
+						"169",
+						"226"
+					],
+					"port": "8000",
+					"path": [
+						"productos",
+						"enc_factura",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CreateDetFactura",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOjEsImlhdCI6MTY3MTExNTI4NSwiZXhwIjoxNjcxMTI5Njg1fQ.WBlHgZm4HeXdMCFv_t--_Agm6F8BumgGE24L8c8mTxM",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "        {\r\n             \"id_enc_factura\":4,\r\n              \"id_product_reference\":2310,\r\n              \"price\": 99900,\r\n              \"qty\": 2,\r\n              \"iva\": 0.19,\r\n              \"dcto\": 0\r\n        }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://18.219.169.226:8000/productos/det_factura/create",
+					"protocol": "http",
+					"host": [
+						"18",
+						"219",
+						"169",
+						"226"
+					],
+					"port": "8000",
+					"path": [
+						"productos",
+						"det_factura",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DeleteDetFactura",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOjEsImlhdCI6MTY3MTExNTI4NSwiZXhwIjoxNjcxMTI5Njg1fQ.WBlHgZm4HeXdMCFv_t--_Agm6F8BumgGE24L8c8mTxM",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "      ",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://18.219.169.226:8000/productos/det_factura/delete/28",
+					"protocol": "http",
+					"host": [
+						"18",
+						"219",
+						"169",
+						"226"
+					],
+					"port": "8000",
+					"path": [
+						"productos",
+						"det_factura",
+						"delete",
+						"28"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DeleteEncFactura",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOjEsImlhdCI6MTY3MTExNTI4NSwiZXhwIjoxNjcxMTI5Njg1fQ.WBlHgZm4HeXdMCFv_t--_Agm6F8BumgGE24L8c8mTxM",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://18.219.169.226:8000/productos/enc_factura/delete/28",
+					"protocol": "http",
+					"host": [
+						"18",
+						"219",
+						"169",
+						"226"
+					],
+					"port": "8000",
+					"path": [
+						"productos",
+						"enc_factura",
+						"delete",
+						"28"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CreateUsuario",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOjEsImlhdCI6MTY3MTExNTI4NSwiZXhwIjoxNjcxMTI5Njg1fQ.WBlHgZm4HeXdMCFv_t--_Agm6F8BumgGE24L8c8mTxM",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "        {\r\n            \"password\": \"Mateo2020$\",\r\n            \"is_superuser\":false,\r\n            \"username\": \"moviles_usb@hotmail.com\",\r\n            \"first_name\": \"moviles\",\r\n            \"last_name\": \"usb\",\r\n            \"email\": \"moviles_usb@hotmail.com\",\r\n            \"is_staff\": true,\r\n            \"is_active\": true,\r\n            \"date_joined\": \"2023-05-18\"\r\n        }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://18.219.169.226:8000/user/create",
+					"protocol": "http",
+					"host": [
+						"18",
+						"219",
+						"169",
+						"226"
+					],
+					"port": "8000",
+					"path": [
+						"user",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UpdatePass",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOjEsImlhdCI6MTY3MTExNTI4NSwiZXhwIjoxNjcxMTI5Njg1fQ.WBlHgZm4HeXdMCFv_t--_Agm6F8BumgGE24L8c8mTxM",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "        {\r\n            \"password\": \"Mateo20201$\",\r\n            \"is_superuser\":false,\r\n            \"username\": \"moviles_usb@hotmail.com\",\r\n            \"first_name\": \"moviles\",\r\n            \"last_name\": \"usb\",\r\n            \"email\": \"moviles_usb@hotmail.com\",\r\n            \"is_staff\": true,\r\n            \"is_active\": true\r\n        }\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://18.219.169.226:8000/user/updatepass/108",
+					"protocol": "http",
+					"host": [
+						"18",
+						"219",
+						"169",
+						"226"
+					],
+					"port": "8000",
+					"path": [
+						"user",
+						"updatepass",
+						"108"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
